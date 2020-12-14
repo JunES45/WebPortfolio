@@ -1,0 +1,187 @@
+.project {
+    /* background-color: antiquewhite; */
+    height: 100vh;
+}
+
+.project > .inner {
+    padding: 2.5rem 3rem;
+    height: 100vh;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    color: #000000 !important;
+    opacity: 1 !important;
+    width: 4rem !important;
+}
+
+.carousel-indicators li {
+    background-color: #000000 !important;
+    opacity: 0.1;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 100% !important;
+    margin-right: 0.3rem !important;
+}
+
+.projectImg > img {
+    width: 100%;
+}
+
+.projectDetailDiv {
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.lProject {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.img {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+.img > img {
+    height: 100%;
+}
+
+.rProject {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectTitleDiv {
+    width: 100%;
+    height: 3rem;
+    font-weight: bold;
+    border-left: 8px solid black;
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.projectTitle {
+    font-size: 2rem;
+}
+
+.rProjectTitle {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.rProjectTitle > i {
+    margin-right: 0.5rem;
+}
+
+.projectDetail {
+    margin-bottom: 3rem;
+}
+
+.infoDiv {
+    margin-bottom: 2.5rem;
+}
+
+.info > table > tbody > tr > td:nth-child(1) {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    color: #aaaaaa;
+}
+
+.info > table > tbody > tr > td {
+    vertical-align: text-top;
+}
+
+.info > table > tbody > tr > td > p {
+    margin: 0;
+}
+
+.git {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.gitLink > div > a {
+    color: black;
+}
+
+.contribution {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contributionDiv {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 770px) {
+    .project > .inner {
+        height: auto;
+    }  
+
+    .project {
+        height: auto;
+    }
+
+    .projectDetailDiv {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .lProject {
+        width: 100%;
+        height: 30%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .rProject {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+    }
+
+    .projectImg > img {
+        width: 70%;
+    }
+
+    .projectTitleDiv {
+        height: 2.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .projectTitle {
+        font-size: 1.5rem;
+    }
+
+    .rProjectTitle {
+        font-size: 1.1rem;
+    }
+
+    .projectDetail, .info, .gitLink {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .project {
+        height: auto;
+    }
+}

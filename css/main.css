@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+}
+
+.main {
+    height: 100%;
+}
+
+.inner {
+    margin: 0;
+    padding: 2rem 5rem;
+}
+
+.title {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.subT {
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.mainT {
+    font-size: 6rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.down {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    vertical-align: bottom;
+}

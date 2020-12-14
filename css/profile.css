@@ -1,0 +1,228 @@
+.profile {
+    /* background-color: floralwhite; */
+    height: 100%;
+    border-top: 0.25rem solid lightgray;
+    border-bottom: 0.25rem solid lightgray;
+}
+
+.detail {
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.lProfile {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.img {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+.img > img {
+    height: 100%;
+}
+
+.name {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.txtProfile {
+    width: 100%;
+}
+
+.txtProfileDiv {
+    display: inline-block;
+    align-items: center;
+}
+
+.txtProfileDiv > div {
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.rProfile {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rProfileTitle {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.txtProfileDiv > div > i,
+.rProfileTitle > i {
+    margin-right: 0.5rem;
+}
+
+.edu {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.eduDate > div,
+.certDate > div,
+.actDate > div {
+    margin-bottom: 0.3rem;
+}
+
+.eduDate > div > span,
+.certDate > div > span,
+.actDate > div > span {
+    margin-right: 0.5rem;
+    color: #aaaaaa;
+}
+
+.certAct {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cert {
+    width: 40%;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+}
+
+.act {
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.skill {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.skillDiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+.progressDiv {
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 1fr;
+    margin-bottom: 1rem;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.progressDiv > img {
+    margin-right: 0.5rem;
+    width: 24px;
+}
+
+.progressDiv > span {
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    text-align: justify;
+}
+
+.progressbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 0.8rem;
+    border-radius: 1rem;
+}
+
+.pbInner {
+    background-color: black;
+    height: 0.8rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 770px) {
+    .inner {
+        padding: 1.5rem;
+    }
+
+    .subT {
+        font-size: 2rem;
+    }
+
+    .mainT {
+        font-size: 4rem;
+    }
+
+    .profile {
+        height: auto;
+    }
+
+    .detail {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .lProfile {
+        width: 100%;
+        height: 30%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .rProfile {
+        width: 100%;
+        height: 70%;
+    }
+
+    .certAct {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cert, .act {
+        width: 100%;
+    }
+
+    .edu, .cert, .act, .skill {
+        margin-bottom: 0.5rem;
+    }
+
+    .profile {
+        height: auto;
+    }
+
+    .skillDiv {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .progressDiv {
+        grid-template-columns: 0.5fr 1fr 2fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .subT {
+        font-size: 1rem;
+    }
+
+    .mainT {
+        font-size: 3rem;
+    }
+
+    .skillDiv {
+        grid-template-columns: 1fr;
+    }
+
+    .progressDiv {
+        grid-template-columns: 0.5fr 1fr 3fr;
+    }
+}
